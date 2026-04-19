@@ -1,0 +1,11 @@
+{
+  "name": "Rocq/Coq Interactive",
+  "image": "rocq/rocq-prover:9.0",
+  "runArgs": ["--workdir=/workspace"],
+  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": ["coq-community.vscoq"],
+  "postCreateCommand": "opam install -y coq-lsp"
+}

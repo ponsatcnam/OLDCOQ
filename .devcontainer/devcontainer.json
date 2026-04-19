@@ -6,6 +6,9 @@
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "extensions": ["coq-community.vscoq"],
-  "postCreateCommand": "opam install -y coq-lsp"
+  "extensions": [
+    "coq-community.vscoq",
+    "coq-community.coq-lsp"
+  ],
+  "postCreateCommand": "opam install -y coq-lsp-server"
 }
